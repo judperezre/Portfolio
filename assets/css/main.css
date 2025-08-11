@@ -126,7 +126,7 @@ input, select, textarea {
 		}
 
 	h2 {
-		font-size: 2em;
+		font-size: 1.8em;
 		letter-spacing: -1px;
 	}
 
@@ -1950,7 +1950,7 @@ input, select, textarea {
 		color: #fff !important;
 		text-decoration: none;
 		padding: 0.75em 2.5em 0.75em 2.5em;
-		background-color: #e27689;
+		background-color: #F7AA3B;
 		border: 0;
 		cursor: pointer;
 		background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15)), url("images/overlay.png");
@@ -1968,7 +1968,7 @@ input, select, textarea {
 		input[type="reset"]:hover,
 		button:hover,
 		.button:hover {
-			background-color: #9ececc;
+			background-color: #6a8382;
 		}
 
 		input[type="button"]:active,
@@ -2107,7 +2107,7 @@ input, select, textarea {
 			position: relative;
 			color: #fff;
 			font-weight: 600;
-			font-size: 0.6em;
+			font-size: 0.55em;
 			line-height: 1em;
 		}
 
@@ -2171,7 +2171,7 @@ input, select, textarea {
 				}
 
 					#nav ul li a.active span:before {
-						color: #e27689;
+						color: #F7AA3B;
 					}
 
 /* Footer */
@@ -2179,7 +2179,7 @@ input, select, textarea {
 	#footer {
 		margin-left: 375px;
 		text-align: center;
-		background-color: #dce3e2;
+		background-color: #ffff;
 		padding: 3em 0 4em 0;
 		box-shadow: inset 0 1px 0 0 rgba(0, 0, 0, 0.05), inset 0 0.1em 0.1em 0 rgba(0, 0, 0, 0.025);
 		font-size: 0.8em;
@@ -2221,7 +2221,7 @@ input, select, textarea {
 
 			#main > section.dark {
 				color: #ddd;
-				color: rgba(255, 255, 255, 0.75);
+				color: rgba(219, 195, 195, 0.75);
 			}
 
 				#main > section.dark h2, #main > section.dark h3, #main > section.dark h4, #main > section.dark h5, #main > section.dark h6 {
@@ -2249,22 +2249,29 @@ input, select, textarea {
 			}
 
 			#main > section.one {
-				background-color: #81918E;
+				background-color: #414756;
 				background-image: url("../../images/banner.jpg");
 			}
 
 			#main > section.two {
-				background-color: #f5fafa;
+				background-color: #ffff;
 			}
 
 			#main > section.three {
-				background-color: #ecf1f1;
+				background-color: #ffff;
 			}
 
 			#main > section.four {
-				background-color: #e8edec;
+				background-color: #fff;
 			}
+.carousel-inner {
+  height: 600px; /* ajusta según tu diseño */
+}
 
+.carousel-item img {
+  height: 100%;
+  object-fit: cover;
+}
 /* Wide */
 
 	@media screen and (min-width: 961px) and (max-width: 1880px) {

@@ -1,0 +1,17 @@
+services:
+
+  - type: web
+    name: mi-portafolio-backend
+    env: node
+    plan: starter
+    buildCommand: "npm install"
+    startCommand: "npm start"
+    rootDir: "portfolio-backend"
+    ports:
+      - 3001
+
+  - type: static
+    name: mi-portafolio-frontend
+    rootDir: "./" # El código está en la raíz
+    buildCommand: "npm run build" # Si tu frontend necesita un proceso de construcción
+    staticPublishPath: "dist" # La carpeta donde se generan los archivos estáticos
