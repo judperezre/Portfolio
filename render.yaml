@@ -7,8 +7,6 @@ services:
     buildCommand: "npm install"
     startCommand: "npm start"
     rootDir: "portfolio-backend"
-    ports:
-      - 3001
 
   - type: web
     name: mi-portafolio-frontend
