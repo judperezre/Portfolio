@@ -8,6 +8,12 @@ const app = express();
 app.use(express.json());
 app.use(cors()); // permite conectar con el frontend
 
+app.use(express.static(path.join(__dirname, '..')));
+
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, '..', 'index.html'));
+});
+
 // Ruta para recibir los mensajes
 app.post('/contact', async (req, res) => {
   const { name, email, message } = req.body;
