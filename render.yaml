@@ -7,9 +7,7 @@ services:
     startCommand: "npm start"
     rootDir: "portfolio-backend"
 
-  - type: web
+  - type: static
     name: mi-portafolio-frontend
-    env: node
-    buildCommand: "npm install"
-    startCommand: "npm start"
-    rootDir: "./"
+    rootDir: "./" # Raíz donde está index.html y assets
+    staticPublishPath: "./" # Publica todo el contenido de la raíz
