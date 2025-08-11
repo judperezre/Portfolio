@@ -10,7 +10,7 @@ services:
     ports:
       - 3001
 
-  - type: static_site
+  - type: web
     name: mi-portafolio-frontend
     rootDir: "./" # El código está en la raíz
     buildCommand: "npm run build" # Si tu frontend necesita un proceso de construcción
